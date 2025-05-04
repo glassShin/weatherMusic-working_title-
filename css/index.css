@@ -1,0 +1,155 @@
+@import url(reset.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/* @font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+} */
+
+html,body{
+  width: 100%;
+  height: 100%;
+  /* font-family: 'Pretendard-Regular'; */
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.container{
+  width: 100%;
+  height: 100%;  
+}
+
+div{
+  box-sizing: border-box;
+}
+hr{
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+.main{
+  margin: 50px auto;
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* wb - weatherbox */
+.wb{
+  width: 50%;
+  padding: 40px;
+  /* box-shadow: 5px 10px 7px #737373; */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 1% auto;
+}
+.wb-1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.wb-1 img{
+  width: 30%;
+  height: 70%;
+  display: block;
+}
+
+.wb-1 p{
+  margin-top:20px
+}
+.wm-title{
+  font-size:1.5rem;
+  width: 100%;
+  margin-bottom:20px;
+  font-weight: 700;
+}
+.location{
+  font-size: 40px;
+  /* font-weight: bolder; */
+}
+.today{
+  font-size: 25px;
+}
+.temperature,.weather,.dust,.rainfall{
+  font-size: 20px;
+}
+.rainfall{
+  display: none;
+}
+
+.temp-value,.weather-value,.rainfall-value,.aqi-value{
+  font-weight: 800;
+}
+
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+
+/* 유튜브 플레이리스트 */
+.music-frame{
+  border-radius: 10px;
+  /* border: 1px solid black; */
+}
+/* .recommend-btn{
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  display: block;
+  margin:  0 auto;
+  margin-top:30px;
+  font-size: larger;
+  font-weight: bold;
+} */
+button {
+  display: block;
+  background: linear-gradient(135deg, #3a3a3a, #1a1a1a);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 20px 50px;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+  margin:20px auto 0 auto;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+@media screen and (max-width: 1280px){
+  .wb{
+    width: 90%;
+    padding:30px;
+    margin:2% auto;
+  }
+  .wb-1{
+    flex-direction: column;
+  }
+  .temperature,.weather,.dust{
+    font-size: 20px;
+  }
+  .temp-value,.weather-value,.aqi-value{
+    font-weight: 800;
+  }
+}
+
+

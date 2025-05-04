@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/index.css" rel="stylesheet">
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5cfb5905a0a852e16569ee8b31ae55d8."></script>
+  <title>Project2</title>
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+        <div class="wb-1 wb"> 
+          <div class="wm-title">
+            <h2>오늘의 날씨</h2>
+            <hr>
+          </div>
+          
+            <img class='weather-img' src="./img/sun.png" alt="noImage">
+            <div class="w-info">
+              <p class="location"></p>
+              <p class="today">
+                <span class='year'></span>
+                <span class='month'></span>
+                <span class='day'></span>
+              </p>
+              <p class="temperature">온도: <span class="temp-value"></span></p>
+              <p class="rainfall">강수량(1H): <span class="rainfall-value"></span></p>
+              <p class="weather">날씨: <span class="weather-value"></span></p>
+              <p class="dust">미세먼지: <span class="aqi-value"></span></p>
+
+            </div>
+        </div>
+
+        <div class="wb-2 wb"> <!-- Weather box -->
+          <div class="wm-title">
+            <h2>지금 듣기 좋은 음악</h2>
+            <hr>
+          </div>
+
+          <div class="music-frame-area"></div>
+          <button class="recommend-btn">다른 음악을 듣고 싶다면?</button>
+        </div>
+
+    </div>
+  </div>
+
+  <script type="module" src="./js/locationWeather.js"></script>
+  <script src='./js/recommendedMusic.js'></script>
+  <!-- <script  src='./js/weatherDescriptions.js'></script> -->
+</body>
+</html>
